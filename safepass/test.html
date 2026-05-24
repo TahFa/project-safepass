@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Crypto</title>
+</head>
+<body>
+
+<script src="assets/js/crypto.js"></script>
+
+<script>
+// TEST ENCRYPT & DECRYPT
+/*(async () => {
+    const salt = generateSalt();
+    const key = await deriveKey("123456", salt);
+
+    const enc = await encryptData("halo dunia", key);
+    console.log("Encrypted:", enc);
+
+    const dec = await decryptData(enc, key);
+    console.log("Decrypted:", dec);
+})();*/
+
+// TEST PASSWORD SALAH
+/*(async () => {
+    const salt = generateSalt();
+
+    // key BENAR
+    const keyBenar = await deriveKey("123456", salt);
+
+    // encrypt pakai key benar
+    const enc = await encryptData("data rahasia", keyBenar);
+    console.log("Encrypted:", enc);
+
+    // key SALAH
+    const keySalah = await deriveKey("password_salah", salt);
+
+    try {
+        const dec = await decryptData(enc, keySalah);
+        console.log("Decrypted:", dec);
+    } catch (err) {
+        console.error("Decrypt gagal (expected):", err);
+    }
+})();*/
+
+// TEST TAMPERING CIPHERTEXT
+/*(async () => {
+    const salt = generateSalt();
+    const key = await deriveKey("123456", salt);
+
+    const enc = await encryptData("data rahasia", key);
+    console.log("Original:", enc);
+
+    // MODIFIKASI ciphertext
+    enc.ciphertext = enc.ciphertext.slice(0, -2) + "AA";
+
+    try {
+        const dec = await decryptData(enc, key);
+        console.log("Decrypted:", dec);
+    } catch (err) {
+        console.error("Tampering terdeteksi:", err);
+    }
+})();*/
+
+// TEST IV
+/*(async () => {
+    const salt = generateSalt();
+    const key = await deriveKey("123456", salt);
+
+    const enc = await encryptData("data rahasia", key);
+
+    // ubah IV
+    enc.iv = enc.iv.slice(0, -2) + "BB";
+
+    try {
+        const dec = await decryptData(enc, key);
+        console.log(dec);
+    } catch (err) {
+        console.error("IV berubah → gagal:", err);
+    }
+})();*/
+</script>
+
+</body>
+</html>

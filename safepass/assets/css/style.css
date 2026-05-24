@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f3fb;
+    color:#2b2b2b;
+}
+
+
+/* ======================
+NAVBAR
+====================== */
+
+.navbar-custom{
+    background: linear-gradient(90deg,#b45cff,#f7a6c7);
+    padding:20px 45px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:white;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.username{
+    color:white;
+    font-size:18px;
+    font-weight:500;
+}
+
+.logout-btn{
+    border:none;
+    background:white;
+    padding:10px 26px;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.logout-btn:hover{
+    transform:translateY(-2px);
+}
+
+
+/* ======================
+DASHBOARD
+====================== */
+
+.dashboard{
+    padding:50px 70px;
+}
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.title{
+    font-size:58px;
+    font-weight:700;
+    color:#6f3bbf;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#666;
+    font-size:20px;
+}
+
+.add-btn{
+    background:linear-gradient(90deg,#b45cff,#d56cff);
+    border:none;
+    color:white;
+    padding:16px 30px;
+    border-radius:18px;
+    font-weight:600;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.add-btn:hover{
+    transform:translateY(-3px);
+}
+
+
+/* ======================
+SEARCH
+====================== */
+
+.search-wrapper{
+    margin-top:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.search-box{
+    background:white;
+    width:500px;
+    max-width:100%;
+    border-radius:20px;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.04);
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    width:100%;
+    background:transparent;
+}
+
+.password-count{
+    color:#666;
+}
+
+
+/* ======================
+CARD
+====================== */
+
+.vault-grid{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:30px;
+}
+
+.vault-card{
+    background:white;
+    border-radius:30px;
+    padding:28px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.vault-card:hover{
+    transform:translateY(-5px);
+}
+
+.app-icon{
+    font-size:45px;
+    color:#b45cff;
+    margin-bottom:15px;
+}
+
+.website-name{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.label{
+    color:#8a8a8a;
+    font-size:14px;
+    margin-bottom:4px;
+}
+
+.value{
+    font-size:20px;
+    margin-bottom:18px;
+}
+
+.password{
+    letter-spacing:4px;
+}
+
+.card-actions{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.edit-btn{
+    flex:1;
+    border:none;
+    background:#c37cff;
+    color:white;
+    padding:14px;
+    border-radius:14px;
+    font-weight:600;
+}
+
+.delete-btn{
+    flex:1;
+    border:none;
+    background:#ff7d9f;
+    color:white;
+    padding:14px;
+    border-radius:14px;
+    font-weight:600;
+}
+
+
+/* ======================
+AUTH
+====================== */
+
+.auth-wrapper{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#c277ff,#ff9fc7);
+}
+
+.auth-card{
+    background:white;
+    width:420px;
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.auth-title{
+    font-size:38px;
+    font-weight:700;
+    color:#6f3bbf;
+    margin-bottom:10px;
+}
+
+.auth-subtitle{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.form-control{
+    border-radius:14px !important;
+    padding:14px !important;
+}
+
+.auth-btn{
+    width:100%;
+    border:none;
+    padding:14px;
+    border-radius:14px;
+    background:linear-gradient(90deg,#b45cff,#f47ab3);
+    color:white;
+    font-weight:600;
+    margin-top:15px;
+}
+
+.auth-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.auth-link a{
+    color:#b45cff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+
+/* ======================
+RESPONSIVE
+====================== */
+
+@media(max-width:768px){
+
+    .dashboard{
+        padding:30px 20px;
+    }
+
+    .title{
+        font-size:42px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .website-name{
+        font-size:28px;
+    }
+
+}
+
