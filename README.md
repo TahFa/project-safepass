@@ -15,10 +15,10 @@ SafePass adalah aplikasi web untuk menyimpan password user secara aman. Semua pa
 
 ## 3. Instalasi & Setup
 
-1. Salin folder proyek ke web root/ke htdocs (xampp) -> htdocs/safepass/
+1. Salin folder proyek ke web root htdocs (xampp) -> xampp/htdocs/[salin project disini]
 2. Jalankan MySQL / MariaDB.
 3. Buat database baru: db_safepass
-4. Import file database dari folder database:db_safepass.sql
+4. Import file database dari folder database: db_safepass.sql
 5. Periksa konfigurasi `koneksi.php` sesuai username/password MySQL lokal.
 6. Buka browser: http://localhost/safepass/
 
@@ -39,7 +39,7 @@ SafePass adalah aplikasi web untuk menyimpan password user secara aman. Semua pa
 
 ## 5. Video Demonstrasi & Pengujian
 
-**Link Youtube:** [link youtube]
+**Link Google Drive:** https://drive.google.com/file/d/1fJ3zYLPD6V10Rn5c-fnsYnw_s2OPPdxL/view?usp=drivesdk
 
 ---
 
